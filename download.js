@@ -22,7 +22,7 @@ app.get("/:id",(req,res)=>{
 
     YD.on("finished", function(err, data) {
         let pata = data.file.replace("/root/Musique/example/mp3/", "")
-        data.link = "http://217.160.255.98/mp3/" + pata
+        data.link = "http://_______/mp3/" + pata
         res.send(data)
         console.log(pata)
     });
