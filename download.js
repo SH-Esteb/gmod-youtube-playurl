@@ -21,7 +21,7 @@ app.get("/:id",(req,res)=>{
     YD.download(code)
 
     YD.on("finished", function(err, data) {
-        let pata = data.file.replace("/root/Musique/example/mp3/", "")
+        let pata = data.file.replace("/root/Musique/mp3/", "")
         data.link = "http://_______/mp3/" + pata
         res.send(data)
         console.log(pata)
