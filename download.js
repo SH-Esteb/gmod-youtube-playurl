@@ -3,7 +3,6 @@ const { loadavg } = require("os");
 const express = require('express')
 const app = express()
 app.use("/mp3",express.static(__dirname+"/mp3"));
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const fs = require('fs')
 
 
